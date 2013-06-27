@@ -1,7 +1,7 @@
 class PicturesController < ApplicationController
 
 	def index
-		@picture = Picture.all
+		@pictures = Picture.all
 	end
 
 	def show
@@ -13,8 +13,7 @@ class PicturesController < ApplicationController
 	end
 
 	def create
-		@picture = Picture.new(params[:picture])
-		# @picture = Picture.new(picture_params)
+		@picture = Picture.new(picture_params)
 		if @picture.save
 				redirect_to pictures_url
 		else
@@ -22,7 +21,7 @@ class PicturesController < ApplicationController
 		end
 	end
 
-	private
+	
 	def picture_params
 			params.require(:picture).permit(:artist, :title, :url)
 	end

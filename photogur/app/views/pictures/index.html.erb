@@ -3,6 +3,6 @@
 
 <% @pictures.each do |picture| %>
 	<p><%= picture[:title] %>, <%= picture[:artist] %></p>
-	<%= link_to image_tax(picture.url), "/pictures/#{picture.id}" %>
+	<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
 	<!-- <img src="<%= picture[:url] %>"/> -->
 <% end %>

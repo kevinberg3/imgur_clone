@@ -3,16 +3,16 @@
 <!-- form action="/pictures" method="POST"> -->
  <%= form_for @picture do |p| %>
 	<p>
-		<%= p.label "artist" %><br>
-		<%= p.text_field "artist" %>
+		<%= p.label :artist %><br>
+		<%= p.text_field :artist %>
 	</p>
 	<p>
-		<%= p.label "title" %><br>
-		<%= p.text_field "title" %>
+		<%= p.label :title %><br>
+		<%= p.text_field :title %>
 	</p>
 	<p>
-		<%= p.label "url" %><br>
-		<%= p.text_field "url" %>
+		<%= p.label :url %><br>
+		<%= p.text_field :url %>
 	</p>
 	<p>
 		<%= p.submit "Save" %> 
