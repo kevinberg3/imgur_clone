@@ -1,36 +1,20 @@
 <h1>Add a picture</h1>
-
- <%= form_tag "/pictures" do %>
-
-
+<%= link_to "Back to Pictures", pictures_url %>
 <!-- form action="/pictures" method="POST"> -->
+ <%= form_for @picture do |p| %>
 	<p>
-		<%= label_tag "artist" %><br>
-		<%= text_field_tag "artist" %>
-
-		<!-- <label>Artist</label><br>
-		<input type='text' name="artist"/> -->
+		<%= p.label "artist" %><br>
+		<%= p.text_field "artist" %>
 	</p>
-
 	<p>
-		<%= label_tag "title" %><br>
-		<%= text_field_tag "title" %>
-		<!-- <label>Title</label><br>
-		<input type='text' name="title"/> -->
+		<%= p.label "title" %><br>
+		<%= p.text_field "title" %>
 	</p>
-
 	<p>
-		<%= label_tag "url" %><br>
-		<%= text_field_tag "url" %>
-
-		<!-- <label>URL</label><br>
-		<input type='text' name="url"/> -->
+		<%= p.label "url" %><br>
+		<%= p.text_field "url" %>
 	</p>
-
 	<p>
-		<%= submit_tag "Save" %>
-
-		<!-- <input type='submit'/> -->
-	</p>
-
+		<%= p.submit "Save" %> 
+	</p> 
 <% end %>
