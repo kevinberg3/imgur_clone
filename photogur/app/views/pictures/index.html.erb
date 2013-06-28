@@ -6,25 +6,27 @@
     <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
 <h1>Twizzy </h1><br>￼￼
 	</head>
 	<nav id="navbar">
 <%= link_to "Upload a photo", "/pictures/new" %>
-</nav>
+	</nav>
 
 	<body>
 		<div id="container">
 
 		<class="Photos">
 		<% @pictures.each do |picture| %>
-
-			<p id="info"><%= picture[:title] %>, <%= picture[:artist] %></p>
-<div id:"pictures">
+		<p id="info"><%= picture[:title] %>, <%= picture[:artist] %></p>
+	<div id:"pictures">
 	<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
-</div>
+	</div>
 <% end %>
 </div>
+
+<footer id#foot>
+This site is an attempt to gather beautiful pictures to emulate the most stunning of cars ever built: the Twizzy.
+</footer>
 
 </body>
 
