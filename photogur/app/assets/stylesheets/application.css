@@ -7,12 +7,44 @@ body {
 	background-color: #FDFDFD;
 }
 
-#navbar {
-	background-color: red;
+#container {
+	width: 1000px;
+	display: inline-block;
+}
+
+a:link {color:white;}      /* unvisited link */
+a:visited {color:white;}  /* visited link */
+a:hover {color:red;}  /* mouse over link */
+a:active {color:red;}  /* selected link */
+
+h1 {
+	color:white;
+	background-color: navy;
 	border: 5px black;
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
+	font-family: 'Oleo Script', cursive;
+	font-color: white;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+
+}
+
+#navbar {
+	background-color: navy;
+	link: color(white);
+	border: 5px black;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-color: white;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	
 }
 
 img {
@@ -28,14 +60,14 @@ img {
 	padding: 2px;
 	width: 250px;
 	height: 250px;
-	transition: opacity .3s ease;
+	transition: all 1s ease;
 
 }
 
 #info {
 
 	float: left;
-	display: inline-block;
+	display: inline;
 
 
 }
@@ -46,10 +78,11 @@ img:hover {
 	-webkit-transform: scale(1.5);
 	transform: scale(1.3);
 
+
 }
 
 #pictures {
-	/*display: inline-block;*/
+	display: inline-block;
 	float: left;
 }
 
