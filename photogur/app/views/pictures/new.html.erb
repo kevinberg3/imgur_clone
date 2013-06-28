@@ -2,19 +2,19 @@
 <%= link_to "Back to Pictures", pictures_url %>
 <!-- form action="/pictures" method="POST"> -->
  <%= form_for @picture do |p| %>
-	<p>
+	<fieldset>
 		<%= p.label :artist %><br>
 		<%= p.text_field :artist %>
-	</p>
-	<p>
+	</fieldset>
+	<fieldset>
 		<%= p.label :title %><br>
 		<%= p.text_field :title %>
-	</p>
-	<p>
+	</fieldset>
+	<fieldset>
 		<%= p.label :url %><br>
 		<%= p.text_field :url %>
-	</p>
-	<p>
+	</fieldset>
+	<fieldset id="save">
 		<%= p.submit "Save" %> 
-	</p> 
+	</fieldset>
 <% end %>

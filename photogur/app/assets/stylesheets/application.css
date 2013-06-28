@@ -1,27 +1,62 @@
 body {
 	background-color: ;
-	background-position: 0 auto;
-	font-family: 'Quantico', sans-serif;
 	
+	font-family: 'Quantico', sans-serif;
+
+	display: inline-block;
+	background-color: #FDFDFD;
 }
 
+#navbar {
+	background-color: red;
+	border: 5px black;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
 
 img {
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
-	-moz-box-shadow: 3px 3px 3px #888;
-	-webkit-box-shadow: 3px 3px 3px #888;
-	box-shadow: 3px 3px 3px #888;
+	-moz-box-shadow: 3px 3px 3px black;
+	-webkit-box-shadow: 3px 3px 3px black;
+	box-shadow: 3px 3px 3px black;
 	margin: 3px;
 	float: left;
 	border: 2px;
 	padding: 2px;
 	width: 250px;
 	height: 250px;
+	transition: opacity .3s ease;
+
 }
 
+#info {
 
+	float: left;
+	display: inline-block;
+
+
+}
+
+img:hover {
+	
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.3);
+
+}
+
+#pictures {
+	/*display: inline-block;*/
+	float: left;
+}
+
+#save:hover {
+
+
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

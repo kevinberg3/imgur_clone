@@ -1,22 +1,27 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>Photogur Clone</title>
+		<title>Photogur Clone</title><br>
     <link rel="stylesheet" href="./custom.css" />
     <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
-</head>
-￼￼
+
+<h1>Twizzy</h1><br>￼￼
 	</head>
+	<nav id="navbar">
+<%= link_to "Upload a new photo", "/pictures/new" %>
+</nav>
 
 	<body>
 
-<h1> Pictures </h1>
-<%= link_to "New Picture", "/pictures/new" %>
+
+
 <class="Photos">
 <% @pictures.each do |picture| %>
-	<p><%= picture[:title] %>, <%= picture[:artist] %></p>
+<div id:"pictures">
+	<p id="info"><%= picture[:title] %>, <%= picture[:artist] %></p><br>
 	<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
 	<!-- <img src="<%= picture[:url] %>"/> -->
+</div>
 <% end %>
 
 </body>
