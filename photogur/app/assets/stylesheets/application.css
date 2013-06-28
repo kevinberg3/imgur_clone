@@ -6,7 +6,7 @@ body {
 #container {
 	width: 1000px;
 	text-align: center;
-	/*display: inline-block;*/
+	
 	margin: 0 auto;
 }
 
@@ -54,12 +54,7 @@ img {
 
 }
 
-img:hover {
-	-moz-transform: scale(1.175);
-	-webkit-transform: scale(1.175);
-	transform: scale(1.175);
-
-#foot {
+h6 {
 	color:white;
 	background-color: navy;
 	border: 5px black;
@@ -71,8 +66,20 @@ img:hover {
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
-
 }
+#show {
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+img:hover {
+	-moz-transform: scale(1.175);
+	-webkit-transform: scale(1.175);
+	transform: scale(1.175);
+
+
+	
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
